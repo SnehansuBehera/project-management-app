@@ -38,10 +38,8 @@ function App() {
           <Header />
           <div className="container">
             <Routes>
-              <Route path="/" element={<Home />}>
-                <Route path="/projects/:id" element={<Project />} />
-              </Route>
-
+              <Route path="/" element={<Home />} />
+              <Route path="https://project-management-app-30di.onrender.com/projects/:id" element={<Project />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
